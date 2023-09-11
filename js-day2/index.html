@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tom = new XMLHttpRequest();
+        
+        tom.open('GET','https://restcountries.com/v3.1/all');
+        tom.send();
+        tom.onload = function(){
+            var result = JSON.parse(tom.response)
+            console.log(result);
+
+            for (var i=0;i<result.length;i++){
+                console.log(result[i].name['common']);
+                console.log(result[i].area);
+                
+            }
+        }
+    </script>
+</body>
+</html>
