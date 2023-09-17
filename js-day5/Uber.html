@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Uber {
+            constructor(distance,rate,AC ){
+                this.distance = distance;
+                this.rate = rate;
+                this.AC = AC;
+            }
+            getPayment(){
+             return(`gundy to chennai airport ${this.distance}km rate of per km is ${this.rate}rs with AC chargers ${this.AC}`)
+            }
+            getAmount(){
+                let amount = (this.distance*this.rate) + (15*this.AC)
+                return amount;
+            }
+            setAC(NonAC){
+                this.AC=NonAC;
+            }
+        }
+          const total = new Uber(10,35,20)
+          total.setAC(0);
+
+          console.log(total.getPayment());
+          console.log(total.getAmount());
+    </script>
+</body>
+</html>
