@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> name, capital, flag</title>
+</head>
+<body>
+    <script>
+         let tom = new XMLHttpRequest();
+        tom.open("GET","https://restcountries.com/v3.1/all");
+        tom.send();
+        tom.onload = ()=>{
+            let data = JSON.parse(tom.response)
+            // console.log(data);
+         
+            data.forEach((index)=>{
+                console.log(index.name["common"]);
+            });
+
+            data.forEach((index)=>{
+                console.log(index.capital);
+            });
+            
+            data.forEach((index)=>{
+                console.log(index.flag);
+            });
+
+        }
+
+    </script>
+</body>
+</html>

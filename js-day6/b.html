@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>population of less than 2 lakhs</title>
+</head>
+<body>
+    <script>
+        let tom = new XMLHttpRequest();
+        tom.open("GET","https://restcountries.com/v3.1/all");
+        tom.send();
+        tom.onload = ()=>{
+            let data = JSON.parse(tom.response)
+            console.log(data);
+
+            const world = data.filter((index)=>index.population<200000)
+            console.log(world);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = [
+            {
+                name : "Thomas",
+                mark : 50
+            },
+            {
+                name : "sam",
+                mark : 60
+            }
+        ]
+          let result = student.map(index=>index.mark+10) 
+          console.log(result);
+
+          let student1 = [
+            {
+                name : "Thomas",
+                mark : 50
+            },
+            {
+                name : "sam",
+                mark : 60
+            },
+            {
+                name : "john",
+                mark : 70
+            },
+            {
+                name : "matthew",
+                mark : 40
+            }
+        ]
+          let result1 = student1.filter(index=>index.mark>50) 
+          console.log(result1);
+
+          let tom = [100,200,300,400,500]
+          let sam = tom.reduce((acc,num)=>acc+num)
+          console.log(sam);
+
+          let student2 = [
+            {
+                name : "Thomas",
+                mark : 50
+            },
+            {
+                name : "sam",
+                mark : 60
+            },
+            {
+                name : "john",
+                mark : 70
+            },
+            {
+                name : "matthew",
+                mark : 40
+            }
+        ]
+              let num = student2.reduce((acc,nan)=>acc+nan.mark,0   )
+              console.log(num);
+    </script>
+</body>
+</html>
