@@ -12,8 +12,17 @@
         tom.send();
         tom.onload=()=>{
             let data = JSON.parse(tom.response)
-            
-        }
+        
+            data.filter(element=>{
+                for (let money in element.currencies){
+                    if(element.currencies[money].name==="United State dollar"){
+                        return true
+                      }
+                  }
+              }).map(element=>console.log(element.name.common))
+         }
+         gettom()
+           
     </script>
 </body>
 </html>
