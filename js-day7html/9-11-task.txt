@@ -1,0 +1,13 @@
+label
+text
+name
+input
+type
+id
+placeholder
+option
+value
+for
+radio
+checkbox
+br
