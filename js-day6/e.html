@@ -14,14 +14,15 @@
             let data = JSON.parse(tom.response)
         
             data.filter(element=>{
-                for (let money in element.currencies){
-                    if(element.currencies[money].name==="United State dollar"){
+                for (let data in element.currencies){
+                    if(element.currencies[data].name==="United State dollar"){
                         return true
                       }
                   }
-              }).map(element=>console.log(element.name.common))
+              })
+              data.map(element=>console.log(element.name["common"]));
          }
-         gettom()
+        
            
     </script>
 </body>
