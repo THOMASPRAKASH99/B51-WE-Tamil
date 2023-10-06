@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+     //  Return all the palindromes in an array
+
+    // anaoymous function
+      
+            let Palindromes = function (array) {
+            const palindromes = [];
+            for (let i = 0; i < array.length; i++) {
+            const word = array[i];
+            const reversedWord = word.split("").reverse().join("");
+            if (word === reversedWord) {
+            palindromes.push(word);
+            }
+           }
+             return palindromes;
+         }
+            const array = ["racecar", "madam", "civic","Hello","world"];
+
+            console.log(Palindromes(array)); 
+
+
+
+
+// IIFE function 
+
+(function(arr){
+    let Palindromes = [];
+    for (let i=0; i<arr.length; i++){
+        let Word = arr[i];
+        let reverse = Word.split("").reverse().join("");
+        if (Word === reverse){
+            Palindromes.push(Word);
+        }
+    }
+    return Palindromes;
+})
+  const arr = ["mom","dad","madam","prime","Guvi"];
+
+  console.log(Palindromes(arr));
+
+
+
+  // (e) Return all the palindromes in an array
+// arrow function 
+ 
+let arrow =  (array) => {
+      const palindromes = [];
+      for (let i = 0; i < array.length; i++) {
+      const word = array[i];
+      const reversedWord = word.split("").reverse().join("");
+      if (word === reversedWord) {
+      palindromes.push(word);
+       }
+      }
+     return palindromes;
+     }
+     (["racecar", "madam", "civic","Hello","world"]);
+
+      console.log(arrow(array)); 
+    </script>
+</body>
+</html>

@@ -15,27 +15,32 @@
                 this.rating = rating;
             }
         }
-            let film = new Movie ("The Nun","colombia pictures","A")
+            let film = new Movie ("The Nun","colombia pictures","AU")
             console.log(film);
            
          
             //(b) 
             class Movie1 {
-            constructor (title,studio,rating="PG") {
+            constructor (title,studio,rating) {
                 this.title = title;
                 this.studio = studio;   
-                this.rating = rating;
+                if (rating==null){
+                    return this.rating = "PG"
+                }
+                else{
+                  return this.rating = "rating"
+                }
             }
         }
            let film1 = new Movie1 ("Avengers","Marvel studio")
            console.log(film1);
             
-       
          //  (c)
-      
+         class PG {
             
+         }
        
-          // (d)
+         // (d)
             class Movie3 {
             constructor (title,studio,rating){
                 this.title = title;

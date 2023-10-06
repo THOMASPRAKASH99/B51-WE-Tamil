@@ -12,7 +12,7 @@
         tom.send();
         tom.onload = ()=>{
             let data = JSON.parse(tom.response)
-            console.log(data);
+            // console.log(data);
 
             const world = data.filter((index)=>index.population<200000)
             console.log(world);
