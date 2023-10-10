@@ -1,0 +1,78 @@
+.form-control{
+    background-color: rgb(58, 56, 56);
+    width: 10%;
+    margin: 100px;
+    border: 1px  solid black;
+    border-radius: 10px;   
+    position: relative;
+    left: 25%;
+    top: -50px;
+  
+}
+.navbar-brand{
+   position: relative;
+   left: 45%;
+}
+.box1{
+   background-color:rgb(58, 56, 56);
+    width: 250px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    left: 50px;
+    top: -100px;
+}
+.box2{
+   background-color:rgb(58, 56, 56);
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    left: 380px;
+    top: -450px;
+}
+.box3{
+   background-color:rgb(58, 56, 56);
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    left: 650px;
+    top: -600px;
+}
+.box4{
+   background-color:rgb(58, 56, 56);
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    left: 920px;
+    top: -750px;
+
+}
+.box5{
+   background-color: rgb(58, 56, 56);
+    width: 750px;
+    height: 110px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    left: 380px;
+    top: -680px;
+}
+.flex-nowrap{
+   width: 65%;
+   left: 12%;
+}
+.fa-brands{
+   position: relative;
+   left: -530px;
+}
+body{
+   background-color: rgb(206, 203, 203);
+   height: 150px;
+}

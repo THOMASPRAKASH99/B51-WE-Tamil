@@ -1,0 +1,317 @@
+.Event{
+   border: 2px solid black;
+  
+   width: 1050px;
+   height: 650px;
+   margin: 100px;
+   position: relative;
+   top: -10px;
+}
+.navbar-light{
+    border: 2px solid black;
+    width: 500px;
+    margin: 35px;
+    left: 22%;
+    height: 50px;
+ }
+.navbar-brand{
+    margin: -10px;
+    position: relative;
+    left: 36%;
+}
+.Event1{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+#box1{
+ position: relative;
+ left: 72px;
+ top: 10px;
+}
+#img1{
+    border: 1px solid black;
+    width: 80px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    top: 35px; 
+}
+#day1{
+    position: relative;
+    left: 95px;
+    top:-75px ;
+}
+#seats1{
+    position: relative;
+    left:100px;
+    top:-65px;
+}
+.btn-sm{
+    padding: 1px;
+    position: absolute;
+    left: 110px;
+    top: 155px;;
+}
+.Event2{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 300px;
+    top: -158px; 
+}
+#box2{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img2{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day2{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats2{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;;
+   }
+.Event3{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 550px;
+    top: -357px;
+}
+#box3{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img3{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day3{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats3{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   }
+.Event4{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 800px;
+    top: -558px;
+}
+#box4{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img4{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day4{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats4{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   }
+.Event5{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 50px;
+    top: -520px;
+}
+#box5{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img5{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day5{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats5{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   }
+.Event6{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 300px;
+    top: -720px;
+}
+#box6{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img6{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day6{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats6{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   }
+.Event7{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 550px;
+    top: -918px;
+} 
+#box7{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img7{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day7{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats7{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   } 
+.Event8{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 800px;
+    top: -1117px;
+}
+#box8{
+    position: relative;
+    left: 72px;
+    top: 10px;
+   }
+   #img8{
+       border: 1px solid black;
+       width: 80px;
+       height: 100px;
+       position: relative;
+       left: 10px;
+       top: 35px; 
+   }
+   #day8{
+       position: relative;
+       left: 95px;
+       top:-75px ;
+   }
+   #seats8{
+       position: relative;
+       left:100px;
+       top:-65px;
+   }
+   .btn-sm{
+       padding: 1px;
+       position: absolute;
+       left: 110px;
+       top: 155px;
+   }
