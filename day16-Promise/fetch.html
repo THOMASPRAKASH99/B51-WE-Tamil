@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let tom = fetch(" https://restcountries.com/v3.1/all ");
+        tom.then((data)=>data.json()).then((data1)=>{console.log(data1)
+            
+            const world = data1.filter((index)=>index.region=="Asia")
+            console.log(world);
+            // --------------------------------------------------------
+            const world1 = data1.filter((index)=>index.population<200000)
+            console.log(world1);
+// -------------------------------------------------------------------------
+            const world2 = data1.reduce((acc,pop)=>acc+pop.population,0)
+            console.log(world2);
+// --------------------------------------------------------------------------
+            data1.forEach((index)=>{
+                console.log(index.name["common"]);
+            });
+
+            data1.forEach((index)=>{
+                console.log(index.capital);
+            });
+            
+            data1.forEach((index)=>{
+                console.log(index.flag);
+            });
+            });
+
+        
+    </script>
+</body>
+</html>

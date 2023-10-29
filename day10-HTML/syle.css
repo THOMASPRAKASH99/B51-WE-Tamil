@@ -1,0 +1,21 @@
+#app{
+    color: green;
+    font-size: 60px;
+}
+#you{
+    color: red;
+    font-size: 60px;
+}
+#th{
+    font-size: 60px
+}
+#go{
+    font-size: 60px;
+    background-image: linear-gradient(to top,red,yellow,blue,green);
+    
+}
+#ins{
+    font-size: 60px;
+    color: rgb(192, 87, 114);
+    rotate: 160deg;
+}
