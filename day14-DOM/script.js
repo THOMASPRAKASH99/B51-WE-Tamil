@@ -1,5 +1,9 @@
+let form = document.createElement("form");
+form.setAttribute("action","");
+
 let div1 = document.createElement("div");
 div1.setAttribute("class","container"); 
+form.append(div1)
 
 let div2 = document.createElement("div");
 div2.setAttribute("class","container1");
@@ -68,10 +72,35 @@ option1.innerHTML = "Female";
 option1.setAttribute("value","female");
 select.append(option1)
 
+let br = document.createElement("BR");
+div2.append(select)
+document.body.append(br)
+
 let food = document.createElement("label");
 food.innerHTML = "Choice of food: ";
 food.setAttribute("for","");
 div2.append(food)
 
-document.body.append(div1);
+let Burger1 = document.createElement("input");
+Burger1.setAttribute("type","checkbox");
+Burger1.setAttribute("value","Burger1");
+div2.append(Burger1)
+
+let label5 = document.createElement("label");
+label5.innerHTML = "Burger";
+label5.setAttribute("for","burger1");
+div2.append(label5)
+
+let Burger2 = document.createElement("input");
+Burger2.setAttribute("type","checkbox");
+Burger2.setAttribute("value","Burger2");
+div2.append(Burger2)
+
+let label6 = document.createElement("label");
+label6.innerHTML = "cheese burger";
+label6.setAttribute("for","Burger2");
+div2.append(label6)
+
+
+document.body.append(form);
         

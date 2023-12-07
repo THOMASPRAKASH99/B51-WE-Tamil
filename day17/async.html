@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function restCountries(){
+            try{
+            let res = await fetch("https://6545d30cfe036a2fa954d5ea.mockapi.io/user1")
+            // console.log(res);
+           let result = await res.json()
+           console.log(result);
+        }
+        catch(err){
+            console.log("somthing went wrong pls check the code     ")
+        }
+    }
+        restCountries();
+    </script>
+</body>
+</html>

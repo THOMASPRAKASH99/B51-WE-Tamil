@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let promise = new Promise((resolve,reject)=>{
+            const request = new XMLHttpRequest();
+            request.open("GET","https://restcountries.com/v3.1/all");
+            request.send();
+
+            request.onload = function(){
+                if(request.status==200){
+                    var data = JSON.parse(request.response)
+                    resolve(data)
+                }
+                else{
+                    reject("Massage Failed")
+                }
+            }
+        })
+          promise.then((data)=>{console.log(data)}).catch((err)=>{console.log(err)})
+    </script>
 </body>
 </html>

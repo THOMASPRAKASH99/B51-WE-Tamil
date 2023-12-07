@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myData = ("https://6545d30cfe036a2fa954d5ea.mockapi.io/user1");
+           
+        async function createData(){
+            let data = {
+                name : "Thomas",
+                mail : "tomson2904@gmail.com",
+                phone : 987654321,
+                education: "BCA"
+            }
+            let data1 = await fetch(myData,{
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-type":"application/json;charset=UTF-8"
+                }
+            })
+            let result = await data1.json()
+            console.log(result);
+        }
+        createData();
+
+        async function updateData(){
+            let data = {
+                name : "Thomas",
+                mail : "tomson2904@gmail.com",
+                phone : 987654321,
+                education: "BCA"
+            }
+            let data1 = await fetch(myData + "/20",{
+                method: "PUT",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-type":"application/json;charset=UTF-8"
+                }
+            })
+            let result = await data1.json()
+            console.log(result);
+        }
+        updateData();
+
+        async function readData(){
+            let data = await fetch (myData)
+            let result = await data.json()
+            console.log(result)
+        }
+        readData();
+
+        async function deleteData(){
+            let data = await fetch(myData + "/51",{
+                method: "DELETE"
+            })
+            let result = await data.json()
+            console.log(result);
+        }
+        deleteData();
+    </script>
+</body>
+</html>
