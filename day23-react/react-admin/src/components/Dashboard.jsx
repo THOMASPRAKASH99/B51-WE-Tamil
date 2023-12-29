@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Report from './Report'
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
+import {GeneralContext} from '../main'
+import {UserContext} from '../utils/UserContextComponent';
 
-function Dashboard({user,setUser}) {
-    console.log(user,setUser);  
+function Dashboard() {
+      
    let data = [
         {
             isProgress :false,
@@ -37,12 +39,16 @@ function Dashboard({user,setUser}) {
         },
     ]
 
-    const nav = useNavigate()
+     const gContext = useContext(GeneralContext)
+     const userContext = useContext(UserContext)
+   
+
+    const navigate = useNavigate()
 
     const toDelete = (i)=>{
-        let newArray = [...user]
+        let newArray = [...userContext.user]
         newArray.splice(i,1)
-        setUser(newArray)
+        userContext.setUser(newArray)
     }
   return <>
   <div id="content-wrapper" className="d-flex flex-column">
@@ -69,7 +75,7 @@ function Dashboard({user,setUser}) {
 </div>
                 <div className='row'>
                 <div className='container-fluid'>
-                <Table striped bordered hover>
+                <Table>
         <thead>
             <tr>
             <th>S.No</th>
@@ -82,7 +88,7 @@ function Dashboard({user,setUser}) {
         </thead>
     <tbody>
     {
-        user.map((e,i)=>{
+       userContext.user.map ((e,i)=>{
             return <tr key={i}>
                 <td>{i+1}</td>
                 <td>{e.firstName}</td>
@@ -90,7 +96,7 @@ function Dashboard({user,setUser}) {
                 <td>{e.email}</td>
                 <td>{e.mobile}</td>
                 <td>
-                    <Button variant='dark' onClick={()=>nav(`/edit-user/${i}`)}>Edit</Button>
+                    <Button variant='dark' onClick={()=>navigate(`/edit-user/${i}`)}>Edit</Button>
                     &nbsp;
                     <Button variant='danger' onClick={()=>toDelete(i)}>Delete</Button>
                 </td>

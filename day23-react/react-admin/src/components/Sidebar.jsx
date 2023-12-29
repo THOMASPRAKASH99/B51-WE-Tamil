@@ -38,6 +38,15 @@ function Sidebar() {
             
             </li>
 
+            <li className="nav-item">
+                <Link to={'/nested'} className="nav-link">
+                    <i className="fas fa-fw fa-cog"></i>
+                    <span>Nested Routing</span>
+                </Link>
+            
+            </li>
+
+
             {/* <!-- Divider --> */}
             <hr className="sidebar-divider"/>
 

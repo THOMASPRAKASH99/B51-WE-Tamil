@@ -5,42 +5,27 @@ import Dashboard from "./components/Dashboard"
 import AddUser from "./components/AddUser"
 import EditUser from "./components/EditUser"
 import {BrowserRouter,Routes,Route,Navigate} from "react-router-dom"
-
+import UserContextComponent from "./utils/UserContextComponent"
+import Nested from "./components/Nested/Nested"
+import Query from "./components/Nested/Query"
+import Class from "./components/Nested/class"
+import Task from "./components/Nested/Task"
+ 
 function App() {
-  let [user,setUser]= useState([
-    {
-      firstName : "Thomas",
-      lastName : "Prakash",
-      email: "thomas@gmail.com",
-      mobile: "9865432154"
-    },
-    {
-      firstName : "John",
-      lastName : "Raj",
-      email: "johnraj@gmail.com",
-      mobile: "9789645322"
-    },
-    {
-      firstName : "Matthew",
-      lastName : "Sharma",
-      email: "matthewsharma@gmail.com",
-      mobile: "6549873210"
-    },
-    {
-      firstName : "Daniel",
-      lastName : "Abishek",
-      email: "danielabi@gmail.com",
-      mobile: "9865432145"
-    },
-  ])
+  
   return <>
       <BrowserRouter>
       <div id="wrapper">
       <Sidebar/>
       <Routes>
-        <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
-        <Route path="/add-user" element={<AddUser user={user} setUser={setUser}/>} />
-        <Route path="/edit-user/:id" element={<EditUser user={user} setUser={setUser}/>} />
+        <Route path="/dashboard" element={<UserContextComponent><Dashboard/></UserContextComponent>}/>
+        <Route path="/add-user" element={<UserContextComponent><AddUser/></UserContextComponent>} />
+        <Route path="/edit-user/:id" element={<UserContextComponent><EditUser/></UserContextComponent>} />
+        <Route path="/nested" element={<Nested/>}>
+            <Route path="class" element={<Class/>}/>
+            <Route path="query" element={<Query/>}/>
+            <Route path="task" element={<Task/>}/>
+        </Route>
         <Route path="*" element={<Navigate to="/dashboard"/>} />
       </Routes>
       
