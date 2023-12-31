@@ -1,15 +1,14 @@
 import React,{useEffect, useState, useContext} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useParams, useNavigate, Navigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { UserContext } from '../utils/UserContextComponent';
 
 function EditUser() {
  
   const param = useParams()
-  
-  
- let navi = useNavigate()
+ 
+ let navigate = useNavigate()
 
   let [fristName,setFname]= useState("")
   let [lastName,setLname]= useState("")
@@ -28,7 +27,7 @@ function EditUser() {
     }
     else{
       alert("ERROR id not found"+param.id)
-      navi('/dashboard')
+      navigate('/dashboard')
     }
   },[])
 

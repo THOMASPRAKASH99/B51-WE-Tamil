@@ -10,6 +10,7 @@ import Nested from "./components/Nested/Nested"
 import Query from "./components/Nested/Query"
 import Class from "./components/Nested/class"
 import Task from "./components/Nested/Task"
+import UseRef from "./components/UseRef"
  
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path="query" element={<Query/>}/>
             <Route path="task" element={<Task/>}/>
         </Route>
+        <Route path="/useref" element={<UseRef/>}/>
         <Route path="*" element={<Navigate to="/dashboard"/>} />
       </Routes>
       

@@ -32,7 +32,7 @@ function Sidebar() {
             {/* <!-- Nav Item - Pages Collapse Menu --> */}
             <li className="nav-item">
                 <Link to={'/add-user'} className="nav-link">
-                    <i className="fas fa-fw fa-cog"></i>
+                <i className="fa-solid fa-users"></i>
                     <span>AddUser</span>
                 </Link>
             
@@ -40,8 +40,16 @@ function Sidebar() {
 
             <li className="nav-item">
                 <Link to={'/nested'} className="nav-link">
-                    <i className="fas fa-fw fa-cog"></i>
+                <i className="fa-solid fa-folder"></i>
                     <span>Nested Routing</span>
+                </Link>
+            
+            </li>
+
+            <li className="nav-item">
+                <Link to={'/useref'} className="nav-link">
+                <i class="fa-solid fa-book"></i>
+                    <span>Hook-useRef</span>
                 </Link>
             
             </li>
