@@ -54,6 +54,14 @@ function Sidebar() {
             
             </li>
 
+            <li className="nav-item">
+                <Link to={'/use-reducer'} className="nav-link">
+                <i class="fa-solid fa-book"></i>
+                    <span>Hook-useReducer</span>
+                </Link>
+            
+            </li>
+
 
             {/* <!-- Divider --> */}
             <hr className="sidebar-divider"/>

@@ -79,7 +79,7 @@ function Dashboard() {
         <thead>
             <tr>
             <th>S.No</th>
-            <th>First Name</th>
+            <th>Frist Name</th>
             <th>Last Name</th>
             <th>Email</th>
             <th>Mobile</th>
@@ -91,7 +91,7 @@ function Dashboard() {
        userContext.user.map ((e,i)=>{
             return <tr key={i}>
                 <td>{i+1}</td>
-                <td>{e.firstName}</td>
+                <td>{e.fristName}</td>
                 <td>{e.lastName}</td>
                 <td>{e.email}</td>
                 <td>{e.mobile}</td>

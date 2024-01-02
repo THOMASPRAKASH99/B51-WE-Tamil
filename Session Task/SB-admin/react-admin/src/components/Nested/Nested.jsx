@@ -1,5 +1,6 @@
 import React,{ useEffect } from 'react'
 import {Outlet, useNavigate} from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 function Nested() {
     let navigate = useNavigate()
@@ -9,12 +10,12 @@ function Nested() {
     },[])
   return <>
   <div className='nested-wrapper'>
-  <h3>Nested Routing </h3>
+  <h3>Nested Routing </h3> <br/>
   <div className='list-wrapper'>
         <ul className='list'>
-        <li onClick={()=>navigate("class")}>Class</li>
-        <li onClick={()=>navigate("query")}>Query</li>
-        <li onClick={()=>navigate("task")}>Task</li>
+       <Button  onClick={()=>navigate("class")}> Class </Button> &nbsp;
+       <Button onClick={()=>navigate("query")}> Query </Button> &nbsp;
+       <Button onClick={()=>navigate("task")}> Task </Button> &nbsp;
         </ul>
   </div>
   

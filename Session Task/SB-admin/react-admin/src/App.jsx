@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import React from "react"
 import Sidebar from "./components/Sidebar"
 import Dashboard from "./components/Dashboard"
@@ -11,6 +11,7 @@ import Query from "./components/Nested/Query"
 import Class from "./components/Nested/class"
 import Task from "./components/Nested/Task"
 import UseRef from "./components/UseRef"
+import UseReducer from "./components/UseReducer"
  
 function App() {
   
@@ -28,6 +29,8 @@ function App() {
             <Route path="task" element={<Task/>}/>
         </Route>
         <Route path="/useref" element={<UseRef/>}/>
+        <Route path="/use-reducer" element={<UseReducer/>}/>
+        
         <Route path="*" element={<Navigate to="/dashboard"/>} />
       </Routes>
       
