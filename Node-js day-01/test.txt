@@ -1,0 +1,2 @@
+The <textarea> tag defines a multi-line text input control. It's often used in forms to collect user inputs like comments or reviews. 
+            A text area can hold an unlimited number of characters, and the text renders in a fixed-width font. 

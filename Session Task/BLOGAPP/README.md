@@ -1,8 +1,32 @@
-# React + Vite
+Blog App Reuirements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.Create Blogs
+    i.Inputs for blog data
+    ii.Preview of blog
+2.Manage Blogs
+    i.List all blogs
+    ii.Activate and Deactivate blogs
+    iii.Edit Blogs
+    iv.Delete Blogs
+3.Display All Blogs
+    i.Should look like news feed
+    ii.Display only allowed or active blogs
+Packages used:
 
-Currently, two official plugins are available:
+1.npm i axios
+2.bootstrap
+3.react-bootstrap
+4.react-router-dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CDN Used
+1.Fontawesome
+
+CSS Used
+1.React Bootstrap
+
+Fontawesome using react
+
+npm i --save @fortawesome/fontawesome-svg-core -- for icons
+npm i --save @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/react-fontawesome@latest
+npm install babel-plugin-macros

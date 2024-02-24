@@ -10,7 +10,7 @@ function Nested() {
     },[])
   return <>
   <div className='nested-wrapper'>
-  <h3>Nested Routing </h3> <br/>
+ <ul><h1> Nested Routing </h1></ul>  <br/>
   <div className='list-wrapper'>
         <ul className='list'>
        <Button  onClick={()=>navigate("class")}> Class </Button> &nbsp;
@@ -19,9 +19,9 @@ function Nested() {
         </ul>
   </div>
   
-  <h2>
-    <Outlet/>
-    </h2>
+  <h3>
+   <ul> <Outlet/> </ul>
+    </h3>
  
   </div>
   </>

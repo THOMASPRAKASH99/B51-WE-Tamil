@@ -7,7 +7,8 @@
 </head>
 <body>
     <script>
-    // (a)
+   
+   // (a)
        class Movie {
             constructor (title,studio,rating) {
                 this.title = title;
@@ -19,6 +20,7 @@
             console.log(film);
            
          
+           
             //(b) 
             class Movie1 {
             constructor (title,studio,rating) {
@@ -35,12 +37,23 @@
            let film1 = new Movie1 ("Avengers","Marvel studio")
            console.log(film1);
             
-         //  (c)
-         class PG {
-            
+         
+           //  (c)
+         class Pg {
+            constructor ([title,studio,rate]){
+                this.title = title;
+                this.studio = studio;
+                this.rate = rate;
+            }
+            getpg(){
+                return ([`${this.title} movie has got ${this.rate} rating on this year this movie director by ${this.studio }`]);
+            }
          }
+            const film2 = new Pg ("spaiderman","marvel studios","PG 13")
+            console.log(film2.getpg());
        
-         // (d)
+         
+            // (d)
             class Movie3 {
             constructor (title,studio,rating){
                 this.title = title;
@@ -50,6 +63,7 @@
         }
            let film3 = new Movie ("Casino Royale","Eon Production","PG13")
            console.log(film3);
+
     </script>
 </body>
 </html>

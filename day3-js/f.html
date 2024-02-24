@@ -7,7 +7,23 @@
 </head>
 <body>
     <script>
-      
+    //   Return median of two sorted arrays of the same size.
+    // anaoymous function
+
+        let num1 = [1,2,3,4,5];
+        let num2 = [6,7,8,9,10];    
+
+        let median = function (num1, num2){
+            let compare = function(i,j){
+                return i - j;
+            }
+            let arr = num1.concat(num2).sort(compare);
+            if(arr.length % 2 == 0){
+                console.log((arr[arr.length/2 -1] + arr[arr.length / 2])/ 2);
+            }
+            console.log(arr[Math.floor(arr.length/2)]);
+        }
+           
     </script>
 </body>
 </html>

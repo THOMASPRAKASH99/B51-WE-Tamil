@@ -10,8 +10,27 @@
     //    (d) Return all the prime numbers in an array
     // anaoymous function
    
+        let newArray = [1,2,3,4,5,6,7,8,9,10];
+        let isPrime = function(newArray){
+            for (let i=2; i<newArray.length; i++){
+                if (newArray % i === 0)
+                return false;
+            }
+            return newArray !== 1;
+        };
+
+        let myPrimeArray = newArray.filter(Element => isPrime(Element));
+        console.log(myPrimeArray)
      
-                  
     // IIFE function
+
+    (function(array){
+        for (let i=2; i<array.length; i++){
+            if (array % i === 0)
+            return false;
+        }
+        return nums !== 1;
+    });
+    let array = [1,2,3,4,5,6,7,8,9,10]
 
     
