@@ -1,0 +1,13 @@
+fname.value = ""
+
+createTable(fname.value,lname.value,address.join(" "),pin.value,genderValue,result,state.value,country.value)
+    fname.value = ""
+    lname.value = ""
+    address1.value = ""
+    address2.value = ""
+    pin.value = ""
+    gender.value = ""
+    foodList = [];
+    state.value = ""
+    country.value = ""
+})
