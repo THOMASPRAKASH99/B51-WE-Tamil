@@ -1,20 +1,16 @@
-let head = document.createElement('h1');
-head.innerHTML ="Countdown";
-document.body.append(head);
 
-let count = document.createElement('h1');
-count.setAttribute('class','container');
 
-let clear = 11;
-let time = setInterval(num,1000)
-let num = ()=>{
-    clear = clear-1;
-    count.innerHTML = clear;
-    if (clear == 0){
-        clearInterval(time)
-        count.innerText = ("Happy Independence Day");
-    }
+let count = document.getElementById('container');
+
+let countdown = ()=>{
+    let time = 11;
+    let clear = setInterval(()=>{
+       time = time-1;
+       count.innerText = time;
+       if(time==0){
+        clearInterval(clear)
+        count.innerText = ("Happy Independence Day")
+       }
+    },1000);
 }
-
-
-document.body.append(count);
+countdown();

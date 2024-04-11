@@ -1,0 +1,15 @@
+body{
+    background: rgb(9,255,0);
+    background: linear-gradient(90deg, rgba(9,255,0,1) 0%, rgba(9,9,121,0) 46%, rgba(255,128,0,1) 100%);
+}
+
+.div{
+    width: 500px;
+   margin: 180px auto 0 auto ;
+    border: 3px solid black;
+    border-radius: 15
+    px;
+}
+#container{
+  padding: 60px;
+}

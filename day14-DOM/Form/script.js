@@ -15,7 +15,7 @@ document.addEventListener('submit',function(e){
 
     let tbody = document.getElementById('table');
     
-    const newRow = tbody.insertRow();
+    const newRow = tbody.insertRow(tbody.rows.length);
 
     const cell1 = newRow.insertCell(0);
     const cell2 = newRow.insertCell(1);
@@ -36,6 +36,6 @@ document.addEventListener('submit',function(e){
     cell7.textContent = state; 
     cell8.textContent = country;
     
-   e.form.reset();
+   form.reset();
     
 });
